@@ -354,19 +354,22 @@ export default function LandingPage() {
           /* Add custom styling for the date input field */
           input[type="date"] {
             position: relative;
-            background-color: #2d3748; /* Dark background */
-            color: white; /* White text and icon */
-            padding-right: 40px; /* Space for custom icon */
+            background-color: #2d3748;
+            color: white;
+            padding-right: 40px;
+            width: 100%; /* Ensure full width on mobile */
+            padding: 0.75rem; /* Add padding to match other inputs */
+            box-sizing: border-box; /* Include padding in the width */
           }
 
           /* Add custom icon */
           input[type="date"]::before {
-            content: '📅'; /* Unicode calendar icon */
+            content: '📅';
             position: absolute;
             right: 10px;
             top: 50%;
             transform: translateY(-50%);
-            color: white; /* Make the icon white */
+            color: white;
             pointer-events: none;
           }
 
@@ -376,6 +379,7 @@ export default function LandingPage() {
             display: none;
           }
         `}</style>
+
       </main>
 
       {/* Footer */}
