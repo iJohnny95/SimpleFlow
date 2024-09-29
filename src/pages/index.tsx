@@ -251,11 +251,13 @@ export default function LandingPage() {
                     <Zap className="text-white h-8 w-8" />
                   </div>
                 </div>
-                <p className="text-lg italic text-gray-700 dark:text-gray-300 mb-6">
+                <p className="text-lg italic text-gray-700 dark:text-gray-300 mb-6 flex-grow">
                   &quot;O FluxoSimples revolucionou o nosso fluxo de trabalho. Aumentámos a produtividade em 30% desde que implementámos as suas soluções.&quot;
                 </p>
-                <p className="font-bold text-gray-900 dark:text-white">Jane Doe</p>
-                <p className="text-sm text-teal-500">CEO, TechCorp</p>
+                <div className="mt-auto">
+                  <p className="font-bold text-gray-900 dark:text-white">Jane Doe</p>
+                  <p className="text-sm text-teal-500">CEO, TechCorp</p>
+                </div>
               </div>
 
               {/* Testimonial 2 */}
@@ -265,11 +267,13 @@ export default function LandingPage() {
                     <BarChart2 className="text-white h-8 w-8" />
                   </div>
                 </div>
-                <p className="text-lg italic text-gray-700 dark:text-gray-300 mb-6">
+                <p className="text-lg italic text-gray-700 dark:text-gray-300 mb-6 flex-grow">
                   &quot;The insights we&apos;ve gained from SimpleFlow&apos;s dashboards have been invaluable. It&apos;s changed the way we make decisions.&quot;
                 </p>
-                <p className="font-bold text-gray-900 dark:text-white">John Smith</p>
-                <p className="text-sm text-indigo-500">CTO, DataDrive</p>
+                <div className="mt-auto">
+                  <p className="font-bold text-gray-900 dark:text-white">John Smith</p>
+                  <p className="text-sm text-indigo-500">CTO, DataDrive</p>
+                </div>
               </div>
 
               {/* Testimonial 3 */}
@@ -279,15 +283,18 @@ export default function LandingPage() {
                     <Cpu className="text-white h-8 w-8" />
                   </div>
                 </div>
-                <p className="text-lg italic text-gray-700 dark:text-gray-300 mb-6">
+                <p className="text-lg italic text-gray-700 dark:text-gray-300 mb-6 flex-grow">
                   &quot;SimpleFlow&apos;s automation tools have saved us countless hours. Our team can now focus on strategic initiatives.&quot;
                 </p>
-                <p className="font-bold text-gray-900 dark:text-white">Emily Brown</p>
-                <p className="text-sm text-purple-500">COO, InnovateCo</p>
+                <div className="mt-auto">
+                  <p className="font-bold text-gray-900 dark:text-white">Emily Brown</p>
+                  <p className="text-sm text-purple-500">COO, InnovateCo</p>
+                </div>
               </div>
             </div>
           </div>
         </section>
+
 
         {/* Contact Us Section */}
         <section
