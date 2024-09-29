@@ -167,7 +167,7 @@ export default function LandingPage() {
                     <li>✔ Reporting tools</li>
                   </ul>
                 </div>
-                <Link href="#get-started">
+                <Link href="#contact-us">
                   <button className="w-full bg-teal-400 hover:bg-teal-500 text-gray-900 font-bold rounded-lg py-3 transition-all duration-300 shadow-md hover:shadow-lg">
                     Get Started
                   </button>
@@ -187,7 +187,7 @@ export default function LandingPage() {
                     <li>✔ Ongoing support</li>
                   </ul>
                 </div>
-                <Link href="#get-started">
+                <Link href="#contact-us">
                   <button className="w-full bg-teal-400 hover:bg-teal-500 text-gray-900 font-bold rounded-lg py-3 transition-all duration-300 shadow-md hover:shadow-lg">
                     Get Started
                   </button>
@@ -207,7 +207,7 @@ export default function LandingPage() {
                     <li>✔ Tailored data solutions</li>
                   </ul>
                 </div>
-                <Link href="#get-started">
+                <Link href="#contact-us">
                   <button className="w-full bg-teal-400 hover:bg-teal-500 text-gray-900 font-bold rounded-lg py-3 transition-all duration-300 shadow-md hover:shadow-lg">
                     Get Started
                   </button>
@@ -306,13 +306,13 @@ export default function LandingPage() {
                   />
                   <input
                     type="email"
-                    placeholder="Email"
+                    placeholder="E-mail"
                     className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
                     required
                   />
                   <input
                     type="tel"
-                    placeholder="Phone (optional)"
+                    placeholder="Phone Number(optional)"
                     className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
                   />
                   <input
