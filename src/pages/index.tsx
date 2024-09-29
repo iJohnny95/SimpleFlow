@@ -358,8 +358,16 @@ export default function LandingPage() {
             color: white;
             padding-right: 40px;
             width: 100%; /* Ensure full width on mobile */
-            padding: 0.75rem; /* Add padding to match other inputs */
-            box-sizing: border-box; /* Include padding in the width */
+            padding: 0.75rem; /* Match padding to other inputs */
+            box-sizing: border-box; /* Include padding in width */
+            display: inline-block;
+          }
+
+          /* Adjust for mobile view */
+          @media (max-width: 640px) {
+            input[type="date"] {
+              width: 100%; /* Ensure full width on smaller screens */
+            }
           }
 
           /* Add custom icon */
