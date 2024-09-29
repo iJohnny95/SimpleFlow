@@ -1,10 +1,11 @@
-import { Html, Head, Main, NextScript } from "next/document";
+// _document.tsx
+import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html className="dark"> {/* Force dark mode here */}
       <Head />
-      <body className="antialiased">
+      <body>
         <Main />
         <NextScript />
       </body>
