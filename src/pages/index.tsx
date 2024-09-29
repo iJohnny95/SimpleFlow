@@ -342,35 +342,14 @@ export default function LandingPage() {
 
         {/* Date Picker Styling */}
         <style jsx>{`
-          /* Hide the default calendar icon */
-          input[type="date"]::-webkit-calendar-picker-indicator {
-            background: none;
-            color: white;
-            opacity: 1;
-            display: block;
-            font-size: 18px;
-          }
-
-          /* Add custom styling for the date input field */
           input[type="date"] {
-            position: relative;
+            width: 100%; /* Make sure it takes full width */
+            padding: 0.75rem; /* Match padding with other input fields */
             background-color: #2d3748;
             color: white;
-            padding-right: 40px;
-            width: 100%; /* Ensure full width on mobile */
-            padding: 0.75rem; /* Match padding to other inputs */
-            box-sizing: border-box; /* Include padding in width */
-            display: inline-block;
+            box-sizing: border-box; /* Ensure padding is included in the width */
           }
 
-          /* Adjust for mobile view */
-          @media (max-width: 640px) {
-            input[type="date"] {
-              width: 100%; /* Ensure full width on smaller screens */
-            }
-          }
-
-          /* Add custom icon */
           input[type="date"]::before {
             content: '📅';
             position: absolute;
@@ -378,13 +357,12 @@ export default function LandingPage() {
             top: 50%;
             transform: translateY(-50%);
             color: white;
-            pointer-events: none;
           }
 
-          /* Remove default calendar icon */
-          input[type="date"]::-webkit-inner-spin-button,
-          input[type="date"]::-webkit-clear-button {
-            display: none;
+          @media (max-width: 640px) {
+            input[type="date"] {
+              width: 100%;
+            }
           }
         `}</style>
 
