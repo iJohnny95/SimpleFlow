@@ -294,15 +294,26 @@ export default function LandingPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <input
                     type="text"
-                    placeholder="Your Name"
+                    placeholder="First Name"
+                    className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
+                    required
+                  />
+                  <input
+                    type="text"
+                    placeholder="Last Name"
                     className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
                     required
                   />
                   <input
                     type="email"
-                    placeholder="Your Email"
+                    placeholder="Email"
                     className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
                     required
+                  />
+                  <input
+                    type="tel"
+                    placeholder="Phone (optional)"
+                    className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
                   />
                   <input
                     type="text"
@@ -310,17 +321,8 @@ export default function LandingPage() {
                     className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
                   />
                   <input
-                    type="tel"
-                    placeholder="Your Phone (optional)"
-                    className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
-                  />
-                  <input
                     type="text"
                     placeholder="Project Budget (optional)"
-                    className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
-                  />
-                  <input
-                    type="date"
                     className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
                   />
                 </div>
@@ -339,47 +341,6 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
-
-        {/* Date Picker Styling */}
-          <style jsx>{`
-            input[type="date"] {
-              width: 100%;
-              padding: 0.75rem;
-              padding-right: 2.5rem; /* Space for the icon */
-              background-color: #2d3748;
-              color: white;
-              box-sizing: border-box;
-              border-radius: 0.375rem;
-              font-size: 1rem;
-              position: relative;
-              -webkit-appearance: none; /* Fix for iOS */
-            }
-
-            /* Custom calendar icon inside the input */
-            input[type="date"]::before {
-              content: '📅';
-              position: absolute;
-              right: 1rem;
-              top: 50%;
-              transform: translateY(-50%);
-              color: white;
-              pointer-events: none;
-            }
-
-            input[type="date"]::-webkit-inner-spin-button,
-            input[type="date"]::-webkit-clear-button {
-              display: none;
-            }
-
-            @media (max-width: 640px) {
-              input[type="date"] {
-                font-size: 1rem;
-              }
-            }
-          `}</style>
-   
-
-
 
       </main>
 
