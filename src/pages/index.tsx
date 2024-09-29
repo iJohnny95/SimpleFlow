@@ -341,30 +341,45 @@ export default function LandingPage() {
         </section>
 
         {/* Date Picker Styling */}
-        <style jsx>{`
-          input[type="date"] {
-            width: 100%; /* Make sure it takes full width */
-            padding: 0.75rem; /* Match padding with other input fields */
-            background-color: #2d3748;
-            color: white;
-            box-sizing: border-box; /* Ensure padding is included in the width */
-          }
-
-          input[type="date"]::before {
-            content: '📅';
-            position: absolute;
-            right: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: white;
-          }
-
-          @media (max-width: 640px) {
+          <style jsx>{`
             input[type="date"] {
               width: 100%;
+              padding: 0.75rem;
+              padding-right: 2.5rem; /* Space for the icon */
+              background-color: #2d3748;
+              color: white;
+              box-sizing: border-box;
+              border-radius: 0.375rem;
+              font-size: 1rem;
+              position: relative;
+              -webkit-appearance: none; /* Fix for iOS */
             }
-          }
-        `}</style>
+
+            /* Custom calendar icon inside the input */
+            input[type="date"]::before {
+              content: '📅';
+              position: absolute;
+              right: 1rem;
+              top: 50%;
+              transform: translateY(-50%);
+              color: white;
+              pointer-events: none;
+            }
+
+            input[type="date"]::-webkit-inner-spin-button,
+            input[type="date"]::-webkit-clear-button {
+              display: none;
+            }
+
+            @media (max-width: 640px) {
+              input[type="date"] {
+                font-size: 1rem;
+              }
+            }
+          `}</style>
+   
+
+
 
       </main>
 
