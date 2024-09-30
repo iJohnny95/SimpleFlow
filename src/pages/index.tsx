@@ -252,7 +252,7 @@ export default function LandingPage() {
                   </div>
                 </div>
                 <p className="text-lg italic text-gray-700 dark:text-gray-300 mb-6 flex-grow">
-                  &quot;O FluxoSimples revolucionou o nosso fluxo de trabalho. Aumentámos a produtividade em 30% desde que implementámos as suas soluções.&quot;
+                  &quot;SimpleFlow revolutionized our workflow. We increased productivity by 30% since implementing their solutions.&quot;
                 </p>
                 <div className="mt-auto">
                   <p className="font-bold text-gray-900 dark:text-white">Jane Doe</p>
@@ -294,6 +294,7 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
+
 
 
         {/* Contact Us Section */}
