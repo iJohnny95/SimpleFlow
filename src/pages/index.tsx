@@ -416,15 +416,18 @@ export default function LandingPage() {
             <form
               name="contact"
               method="POST"
-              action="/thank-you" // Redirect to thank-you page on successful submission
+              action="/thank-you" // Redirect to the thank-you page after successful submission
               data-netlify="true"
-              netlify-honeypot="bot-field"
+              netlify-honeypot="bot-field" // Honeypot field for spam protection
               className="space-y-8"
             >
               <input type="hidden" name="form-name" value="contact" />
+              
+              {/* Hidden field for spam prevention */}
               <p className="hidden">
                 <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
               </p>
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <input
                   type="text"
@@ -466,6 +469,7 @@ export default function LandingPage() {
                   className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
                 />
               </div>
+
               <textarea
                 name="message"
                 placeholder="Tell us about your business needs and how we can assist you."
@@ -473,8 +477,12 @@ export default function LandingPage() {
                 className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
                 required
               />
+
               <div className="text-center">
-                <button className="px-8 py-4 bg-gradient-to-r from-teal-500 to-indigo-500 text-white font-bold rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                <button
+                  type="submit"
+                  className="px-8 py-4 bg-gradient-to-r from-teal-500 to-indigo-500 text-white font-bold rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                >
                   Get in Touch
                 </button>
               </div>
