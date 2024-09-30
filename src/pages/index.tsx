@@ -413,72 +413,73 @@ export default function LandingPage() {
             </div>
 
             <div className="mt-12 max-w-4xl mx-auto bg-white dark:bg-gray-900 p-10 rounded-lg shadow-xl">
-              <form
-                name="contact"
-                method="POST"
-                data-netlify="true"
-                netlify-honeypot="bot-field"
-                onSubmit={handleSubmit} // Use a JavaScript handler to process the form submission
-                className="space-y-8"
-              >
-                <input type="hidden" name="form-name" value="contact" />
-                <p className="hidden">
-                  <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <input
-                    type="text"
-                    name="first-name"
-                    placeholder="First Name"
-                    className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
-                    required
-                  />
-                  <input
-                    type="text"
-                    name="last-name"
-                    placeholder="Last Name"
-                    className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
-                    required
-                  />
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="E-mail"
-                    className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
-                    required
-                  />
-                  <input
-                    type="tel"
-                    name="phone"
-                    placeholder="Phone Number (optional)"
-                    className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
-                  />
-                  <input
-                    type="text"
-                    name="company-name"
-                    placeholder="Company Name (optional)"
-                    className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
-                  />
-                  <input
-                    type="text"
-                    name="budget"
-                    placeholder="Project Budget (optional)"
-                    className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
-                  />
-                </div>
-                <textarea
-                  name="message"
-                  placeholder="Tell us about your business needs and how we can assist you."
-                  rows={5}
+            <form
+              name="contact"
+              method="POST"
+              action="/thank-you" // Redirect to thank-you page on successful submission
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              className="space-y-8"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <p className="hidden">
+                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <input
+                  type="text"
+                  name="first-name"
+                  placeholder="First Name"
                   className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
                   required
                 />
-                <div className="text-center">
-                  <button className="px-8 py-4 bg-gradient-to-r from-teal-500 to-indigo-500 text-white font-bold rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
-                    Get in Touch
-                  </button>
-                </div>
-              </form>
+                <input
+                  type="text"
+                  name="last-name"
+                  placeholder="Last Name"
+                  className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
+                  required
+                />
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone Number (optional)"
+                  className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
+                />
+                <input
+                  type="text"
+                  name="company-name"
+                  placeholder="Company Name (optional)"
+                  className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
+                />
+                <input
+                  type="text"
+                  name="budget"
+                  placeholder="Project Budget (optional)"
+                  className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
+                />
+              </div>
+              <textarea
+                name="message"
+                placeholder="Tell us about your business needs and how we can assist you."
+                rows={5}
+                className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
+                required
+              />
+              <div className="text-center">
+                <button className="px-8 py-4 bg-gradient-to-r from-teal-500 to-indigo-500 text-white font-bold rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                  Get in Touch
+                </button>
+              </div>
+            </form>
+
             </div>
           </div>
         </section>
