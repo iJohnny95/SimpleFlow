@@ -17,4 +17,9 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  /* Custom utility for the tick color */
+  .custom-tick {
+    color: #2DD4BF !important; /* Baby blue color */
+  }
 }
