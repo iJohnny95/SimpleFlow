@@ -12,6 +12,7 @@ const config: Config = {
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
+        tickBlue: '#2DD4BF', // Add the baby blue color here
       },
     },
   },
