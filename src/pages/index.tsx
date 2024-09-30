@@ -9,37 +9,35 @@ export default function LandingPage() {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-
   // Form submit handler function
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault(); // Prevent the default form submission
+    event.preventDefault();
 
-    const formData = new FormData(event.target as HTMLFormElement); // Gather form data
-    const data = Object.fromEntries(formData.entries()); // Convert formData to an object
+    const formData = new FormData(event.target as HTMLFormElement);
 
     try {
-      // Make a POST request to your API endpoint or server
-      const response = await fetch('/api/contact', {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbxFuIQkxwfJI2FjSGdqeD3NTBqMSvS5fE4QuDxNMRY29xE4pD2PKZ1DJpXgJsaMMahVwg/exec', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data), // Convert the data to JSON
+        body: formData, // Send FormData directly
       });
 
+      // Log the full response for debugging
+      console.log('Response:', response);
+      console.log('Response status:', response.status);
+      console.log('Response status text:', response.statusText);
+
       if (response.ok) {
-        // If submission is successful, redirect to the thank-you page
-        window.location.href = '/thank-you';
+        alert('We will be in contact soon.');
       } else {
-        // If there was a problem, handle the error
-        alert('There was an issue submitting the form. Please try again.');
+        const errorText = await response.text(); // Get the error response
+        alert(`There was a problem submitting the form: ${errorText}`);
       }
     } catch (error) {
-      // Catch and log any error that happens during the request
       console.error('Error:', error);
       alert('An error occurred. Please try again later.');
     }
   };
+
 
   return (
     <div className="flex flex-col min-h-screen transition-colors duration-500">
@@ -428,7 +426,6 @@ export default function LandingPage() {
               <form
                 name="contact"
                 method="POST"
-                action="/thank-you" // Change this or handle via JS fetch below
                 className="space-y-8"
                 onSubmit={handleSubmit} // Add JS form handling function
               >
@@ -494,6 +491,7 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
+
 
 
 
