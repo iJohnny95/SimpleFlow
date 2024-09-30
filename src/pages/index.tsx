@@ -190,7 +190,7 @@ export default function LandingPage() {
             {/* Mobile: Horizontal Scroll */}
             <div className="flex flex-row space-x-4 overflow-x-auto snap-x snap-mandatory sm:hidden pb-4 scroll-smooth">
               {/* Pricing Card - Basic Plan */}
-              <div className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg flex-shrink-0 w-72 snap-center transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:text-white group">
+              <div className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg flex-shrink-0 w-72 snap-center transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:text-white group flex flex-col">
                 <div className="flex-grow">
                   <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100 group-hover:text-white transition-colors duration-300">
                     Basic Plan
@@ -206,14 +206,14 @@ export default function LandingPage() {
                   </ul>
                 </div>
                 <Link href="#contact-us">
-                  <button className="w-full bg-teal-400 hover:bg-teal-500 text-gray-900 font-bold rounded-lg py-3 transition-all duration-300 shadow-md hover:shadow-lg">
+                  <button className="w-full bg-teal-400 hover:bg-teal-500 text-gray-900 font-bold rounded-lg py-3 transition-all duration-300 shadow-md hover:shadow-lg mt-auto">
                     Get Started
                   </button>
                 </Link>
               </div>
 
               {/* Pricing Card - Pro Plan */}
-              <div className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg flex-shrink-0 w-72 snap-center transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:text-white group">
+              <div className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg flex-shrink-0 w-72 snap-center transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:text-white group flex flex-col">
                 <div className="flex-grow">
                   <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100 group-hover:text-white transition-colors duration-300">
                     Pro Plan
@@ -229,14 +229,14 @@ export default function LandingPage() {
                   </ul>
                 </div>
                 <Link href="#contact-us">
-                  <button className="w-full bg-teal-400 hover:bg-teal-500 text-gray-900 font-bold rounded-lg py-3 transition-all duration-300 shadow-md hover:shadow-lg">
+                  <button className="w-full bg-teal-400 hover:bg-teal-500 text-gray-900 font-bold rounded-lg py-3 transition-all duration-300 shadow-md hover:shadow-lg mt-auto">
                     Get Started
                   </button>
                 </Link>
               </div>
 
               {/* Pricing Card - Enterprise Plan */}
-              <div className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg flex-shrink-0 w-72 snap-center transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:text-white group">
+              <div className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg flex-shrink-0 w-72 snap-center transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:text-white group flex flex-col">
                 <div className="flex-grow">
                   <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100 group-hover:text-white transition-colors duration-300">
                     Enterprise Plan
@@ -252,12 +252,13 @@ export default function LandingPage() {
                   </ul>
                 </div>
                 <Link href="#contact-us">
-                  <button className="w-full bg-teal-400 hover:bg-teal-500 text-gray-900 font-bold rounded-lg py-3 transition-all duration-300 shadow-md hover:shadow-lg">
+                  <button className="w-full bg-teal-400 hover:bg-teal-500 text-gray-900 font-bold rounded-lg py-3 transition-all duration-300 shadow-md hover:shadow-lg mt-auto">
                     Get Started
                   </button>
                 </Link>
               </div>
             </div>
+          
 
             {/* Desktop: Grid Layout */}
             <div className="hidden sm:grid gap-8 sm:grid-cols-1 lg:grid-cols-3">
