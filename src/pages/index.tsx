@@ -155,70 +155,44 @@ export default function LandingPage() {
             </p>
             <div className="grid gap-8 sm:grid-cols-1 lg:grid-cols-3">
               
-            {/* Basic Plan */}
-            <div className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:text-white flex flex-col group">
-              <div className="flex-grow">
-                <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100 group-hover:text-white transition-colors duration-300">
-                  Basic Plan
-                </h3>
-                <p className="text-lg mb-4 text-gray-700 dark:text-gray-400 group-hover:text-white transition-colors duration-300">
-                  Perfect for startups looking to automate essential business processes.
-                </p>
-                <p className="text-4xl font-bold mb-4 group-hover:text-white transition-colors duration-300">€500+</p>
-                <ul className="text-left mb-6 space-y-2">
-                  <li><span className="text-[#2DD4BF] font-bold">✔</span> <span className="text-white">Basic automation setup</span></li>
-                  <li><span className="text-[#2DD4BF] font-bold">✔</span> <span className="text-white">Dashboard integration</span></li>
-                  <li><span className="text-[#2DD4BF] font-bold">✔</span> <span className="text-white">Reporting tools</span></li>
-                </ul>
-              </div>
-              <Link href="#contact-us">
-                <button className="w-full bg-teal-400 hover:bg-teal-500 text-gray-900 font-bold rounded-lg py-3 transition-all duration-300 shadow-md hover:shadow-lg">
-                  Get Started
-                </button>
-              </Link>
-            </div>
-
-            {/* Pro Plan */}
-            <div className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:text-white flex flex-col group">
-              <div className="flex-grow">
-                <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100 group-hover:text-white transition-colors duration-300">
-                  Pro Plan
-                </h3>
-                <p className="text-lg mb-4 text-gray-700 dark:text-gray-400 group-hover:text-white transition-colors duration-300">
-                  For businesses that need advanced automation and data-driven insights.
-                </p>
-                <p className="text-4xl font-bold mb-4 group-hover:text-white transition-colors duration-300">€1500+</p>
-                <ul className="text-left mb-6 space-y-2">
-                  <li><span className="text-[#2DD4BF] font-bold">✔</span> <span className="text-white">Advanced automation tools</span></li>
-                  <li><span className="text-[#2DD4BF] font-bold">✔</span> <span className="text-white">Customizable dashboards</span></li>
-                  <li><span className="text-[#2DD4BF] font-bold">✔</span> <span className="text-white">In-depth analytics and reporting</span></li>
-                  <li><span className="text-[#2DD4BF] font-bold">✔</span> <span className="text-white">Ongoing support</span></li>
-                </ul>
-              </div>
-              <Link href="#contact-us">
-                <button className="w-full bg-teal-400 hover:bg-teal-500 text-gray-900 font-bold rounded-lg py-3 transition-all duration-300 shadow-md hover:shadow-lg">
-                  Get Started
-                </button>
-              </Link>
-            </div>
-
-
-              {/* Enterprise Plan */}
+              {/* Basic Plan */}
               <div className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:text-white flex flex-col group">
                 <div className="flex-grow">
                   <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100 group-hover:text-white transition-colors duration-300">
-                    Enterprise Plan
+                    Basic Plan
                   </h3>
-                  {/* Updated subtitle to change to white on hover */}
                   <p className="text-lg mb-4 text-gray-700 dark:text-gray-400 group-hover:text-white transition-colors duration-300">
-                    Comprehensive automation solutions for large-scale businesses with dedicated support.
+                    Perfect for startups looking to automate essential business processes.
                   </p>
-                  <p className="text-4xl font-bold mb-4 group-hover:text-white transition-colors duration-300">€5000+</p>
+                  <p className="text-4xl font-bold mb-4 group-hover:text-white transition-colors duration-300">€500+</p>
                   <ul className="text-left mb-6 space-y-2">
-                    <li><span className="text-[#2DD4BF] font-bold">✔</span> <span className="text-white">Full-scale automation services</span></li>
-                    <li><span className="text-[#2DD4BF] font-bold">✔</span> <span className="text-white">Enterprise-level dashboards</span></li>
-                    <li><span className="text-[#2DD4BF] font-bold">✔</span> <span className="text-white">24/7 dedicated support</span></li>
-                    <li><span className="text-[#2DD4BF] font-bold">✔</span> <span className="text-white">Tailored data solutions</span></li>
+                    <li><span className="text-[#2DD4BF] font-bold">✔</span> <span className="text-white">Basic automation setup</span></li>
+                    <li><span className="text-[#2DD4BF] font-bold">✔</span> <span className="text-white">Dashboard integration</span></li>
+                    <li><span className="text-[#2DD4BF] font-bold">✔</span> <span className="text-white">Reporting tools</span></li>
+                  </ul>
+                </div>
+                <Link href="#contact-us">
+                  <button className="w-full bg-teal-400 hover:bg-teal-500 text-gray-900 font-bold rounded-lg py-3 transition-all duration-300 shadow-md hover:shadow-lg">
+                    Get Started
+                  </button>
+                </Link>
+              </div>
+
+              {/* Pro Plan */}
+              <div className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:text-white flex flex-col group">
+                <div className="flex-grow">
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100 group-hover:text-white transition-colors duration-300">
+                    Pro Plan
+                  </h3>
+                  <p className="text-lg mb-4 text-gray-700 dark:text-gray-400 group-hover:text-white transition-colors duration-300">
+                    For businesses that need advanced automation and data-driven insights.
+                  </p>
+                  <p className="text-4xl font-bold mb-4 group-hover:text-white transition-colors duration-300">€1500+</p>
+                  <ul className="text-left mb-6 space-y-2">
+                    <li><span className="text-[#2DD4BF] font-bold">✔</span> <span className="text-white">Advanced automation tools</span></li>
+                    <li><span className="text-[#2DD4BF] font-bold">✔</span> <span className="text-white">Customizable dashboards</span></li>
+                    <li><span className="text-[#2DD4BF] font-bold">✔</span> <span className="text-white">In-depth analytics and reporting</span></li>
+                    <li><span className="text-[#2DD4BF] font-bold">✔</span> <span className="text-white">Ongoing support</span></li>
                   </ul>
                 </div>
                 <Link href="#contact-us">
@@ -229,9 +203,35 @@ export default function LandingPage() {
               </div>
 
 
+                {/* Enterprise Plan */}
+                <div className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:text-white flex flex-col group">
+                  <div className="flex-grow">
+                    <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100 group-hover:text-white transition-colors duration-300">
+                      Enterprise Plan
+                    </h3>
+                    <p className="text-lg mb-4 text-gray-700 dark:text-gray-400 group-hover:text-white transition-colors duration-300">
+                      Comprehensive automation solutions for large-scale businesses with dedicated support.
+                    </p>
+                    <p className="text-4xl font-bold mb-4 group-hover:text-white transition-colors duration-300">€5000+</p>
+                    <ul className="text-left mb-6 space-y-2">
+                      <li><span className="text-[#2DD4BF] font-bold">✔</span> <span className="text-white">Full-scale automation services</span></li>
+                      <li><span className="text-[#2DD4BF] font-bold">✔</span> <span className="text-white">Enterprise-level dashboards</span></li>
+                      <li><span className="text-[#2DD4BF] font-bold">✔</span> <span className="text-white">24/7 dedicated support</span></li>
+                      <li><span className="text-[#2DD4BF] font-bold">✔</span> <span className="text-white">Tailored data solutions</span></li>
+                    </ul>
+                  </div>
+                  <Link href="#contact-us">
+                    <button className="w-full bg-teal-400 hover:bg-teal-500 text-gray-900 font-bold rounded-lg py-3 transition-all duration-300 shadow-md hover:shadow-lg">
+                      Get Started
+                    </button>
+                  </Link>
+                </div>
+
+
             </div>
           </div>
         </section>
+
 
         {/* Testimonials Section */}
         <section id="testimonials" className="w-full py-16 md:py-24 bg-gray-50 dark:bg-gray-900 transition-colors duration-500">
