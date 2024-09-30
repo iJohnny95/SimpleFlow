@@ -1,10 +1,7 @@
 {
     "extends": "next/core-web-vitals",
     "rules": {
-      // You can add custom ESLint rules here
-      // Example:
-      // "no-console": "warn",
-      // "react/no-unescaped-entities": "off"
+      "react/no-unescaped-entities": "off"
     }
   }
   
