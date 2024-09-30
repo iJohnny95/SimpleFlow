@@ -87,33 +87,36 @@ export default function LandingPage() {
 
       {/* Main Content */}
       <main className="flex-1 pt-16">
-        {/* Features Section */}
-        <section id="features" className="w-full py-16 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
-          <div className="container mx-auto max-w-7xl px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center text-center space-y-6">
-              <div className="space-y-4">
-                <h1 className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl animate-pulse">
-                  Simplify, Automate, and Scale Your Business with SimpleFlow
-                </h1>
-                <p className="mx-auto max-w-[700px] md:text-xl lg:text-2xl mt-6">
-                  Unlock the power of <strong>automation</strong> and <strong>real-time analytics</strong> to make smarter, faster business decisions. SimpleFlow's <strong>interactive dashboards</strong> put actionable insights at your fingertips, helping you grow your business with confidence.
-                </p>
-              </div>
-              <div className="space-x-4">
-                <Link href="#contact-us">
-                  <button className="px-6 py-3 rounded-lg bg-teal-400 hover:bg-teal-500 text-gray-900 font-bold text-lg transition-all duration-300 shadow-md hover:shadow-lg">
-                    Start Automating Today
-                  </button>
-                </Link>
-                <Link href="#services">
-                  <button className="px-6 py-3 rounded-lg border border-white hover:bg-white hover:text-gray-900 font-bold text-lg transition-all duration-300 shadow-md hover:shadow-lg">
-                    Explore Our Solutions
-                  </button>
-                </Link>
-              </div>
+      {/* Features Section */}
+      <section id="features" className="w-full py-16 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+        <div className="container mx-auto max-w-7xl px-4 md:px-6">
+          <div className="flex flex-col items-center justify-center text-center space-y-6">
+            <div className="space-y-4">
+              <h1 className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl animate-pulse">
+                Simplify, Automate, and Scale Your Business with SimpleFlow
+              </h1>
+              <p className="mx-auto max-w-[700px] md:text-xl lg:text-2xl mt-6">
+                Unlock the power of <strong>automation</strong> and <strong>real-time analytics</strong> to make smarter, faster business decisions. SimpleFlow's <strong>interactive dashboards</strong> put actionable insights at your fingertips, helping you grow your business with confidence.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 w-full justify-center">
+              <Link href="#contact-us" className="w-full sm:w-auto">
+                <button className="w-full px-6 py-3 rounded-lg bg-teal-400 hover:bg-teal-500 text-gray-900 font-bold text-lg transition-all duration-300 shadow-md hover:shadow-lg">
+                  Start Automating Today
+                </button>
+              </Link>
+              <Link href="#services" className="w-full sm:w-auto">
+                <button className="w-full px-6 py-3 rounded-lg border border-white hover:bg-white hover:text-gray-900 font-bold text-lg transition-all duration-300 shadow-md hover:shadow-lg">
+                  Explore Our Solutions
+                </button>
+              </Link>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
+
+
+
         {/* Services Section */}
         <section id="services" className="w-full py-16 md:py-24 bg-gray-100 dark:bg-gray-900 transition-colors duration-500">
           <div className="container mx-auto max-w-7xl px-4 md:px-6">
