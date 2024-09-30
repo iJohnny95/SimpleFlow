@@ -22,4 +22,11 @@ body {
   .custom-tick {
     color: #2DD4BF !important; /* Baby blue color */
   }
+  
+  /* Specific targeting for mobile (max-width: 768px) */
+  @media (max-width: 768px) {
+    .custom-tick {
+      color: #2DD4BF !important; /* Ensure it's applied on mobile */
+    }
+  }
 }
