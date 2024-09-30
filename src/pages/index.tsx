@@ -10,24 +10,6 @@ export default function LandingPage() {
     setMenuOpen(!menuOpen);
   };
 
-  // Define handleSubmit with explicit type for the 'event' parameter
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault(); // Prevent default form submission
-
-    const formData = new FormData(event.target as HTMLFormElement);
-
-    // Send the form data via POST request to Netlify's form handler
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData as any).toString(),
-    })
-      .then(() => {
-        alert("Thank you! We received your message and will be in touch shortly to discuss the project further.");
-        event.currentTarget.reset(); // Reset the form after successful submission
-      })
-      .catch((error) => alert("Oops! Something went wrong. Please try again."));
-  };
 
   return (
     <div className="flex flex-col min-h-screen transition-colors duration-500">
