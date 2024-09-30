@@ -18,15 +18,14 @@ body {
     text-wrap: balance;
   }
 
-  /* Custom utility for the tick color */
   .custom-tick {
-    color: #2DD4BF !important; /* Baby blue color */
+    color: #2DD4BF !important; /* Force baby blue color */
   }
   
-  /* Specific targeting for mobile (max-width: 768px) */
   @media (max-width: 768px) {
     .custom-tick {
-      color: #2DD4BF !important; /* Ensure it's applied on mobile */
+      color: #2DD4BF !important; /* Reinforce it for mobile */
     }
   }
+  
 }
