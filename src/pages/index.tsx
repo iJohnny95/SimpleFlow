@@ -16,7 +16,7 @@ export default function LandingPage() {
     const formData = new FormData(event.target as HTMLFormElement);
 
     try {
-      const response = await fetch('https://script.google.com/macros/s/AKfycbxFuIQkxwfJI2FjSGdqeD3NTBqMSvS5fE4QuDxNMRY29xE4pD2PKZ1DJpXgJsaMMahVwg/exec', {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbwxnE6c-rDCBGCfoOsVdDqIPfRGytyw0fvECc1Vh-YZ-2MVNssvcDaHeLOhUuaeSFnb/exec', {
         method: 'POST',
         body: formData, // Send FormData directly
       });
