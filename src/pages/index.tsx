@@ -166,9 +166,9 @@ export default function LandingPage() {
                   </p>
                   <p className="text-4xl font-bold mb-4 group-hover:text-white transition-colors duration-300">€500+</p>
                   <ul className="text-left mb-6 space-y-2">
-                    <li><span className="text-[#2DD4BF] !important font-bold">✔</span> <span className="text-white">Basic automation setup</span></li>
-                    <li><span className="text-[#2DD4BF] !important font-bold">✔</span> <span className="text-white">Dashboard integration</span></li>
-                    <li><span className="text-[#2DD4BF] !important font-bold">✔</span> <span className="text-white">Reporting tools</span></li>
+                    <li><span style={{ color: '#2DD4BF', fontWeight: 'bold' }}>✔</span> <span className="text-white">Basic automation setup</span></li>
+                    <li><span style={{ color: '#2DD4BF', fontWeight: 'bold' }}>✔</span> <span className="text-white">Dashboard integration</span></li>
+                    <li><span style={{ color: '#2DD4BF', fontWeight: 'bold' }}>✔</span> <span className="text-white">Reporting tools</span></li>
                   </ul>
                 </div>
                 <Link href="#contact-us">
@@ -189,10 +189,10 @@ export default function LandingPage() {
                   </p>
                   <p className="text-4xl font-bold mb-4 group-hover:text-white transition-colors duration-300">€1500+</p>
                   <ul className="text-left mb-6 space-y-2">
-                    <li><span className="text-[#2DD4BF] !important font-bold">✔</span> <span className="text-white">Advanced automation tools</span></li>
-                    <li><span className="text-[#2DD4BF] !important font-bold">✔</span> <span className="text-white">Customizable dashboards</span></li>
-                    <li><span className="text-[#2DD4BF] !important font-bold">✔</span> <span className="text-white">In-depth analytics and reporting</span></li>
-                    <li><span className="text-[#2DD4BF] !important font-bold">✔</span> <span className="text-white">Ongoing support</span></li>
+                    <li><span style={{ color: '#2DD4BF', fontWeight: 'bold' }}>✔</span> <span className="text-white">Advanced automation tools</span></li>
+                    <li><span style={{ color: '#2DD4BF', fontWeight: 'bold' }}>✔</span> <span className="text-white">Customizable dashboards</span></li>
+                    <li><span style={{ color: '#2DD4BF', fontWeight: 'bold' }}>✔</span> <span className="text-white">In-depth analytics and reporting</span></li>
+                    <li><span style={{ color: '#2DD4BF', fontWeight: 'bold' }}>✔</span> <span className="text-white">Ongoing support</span></li>
                   </ul>
                 </div>
                 <Link href="#contact-us">
@@ -213,10 +213,10 @@ export default function LandingPage() {
                   </p>
                   <p className="text-4xl font-bold mb-4 group-hover:text-white transition-colors duration-300">€5000+</p>
                   <ul className="text-left mb-6 space-y-2">
-                    <li><span className="text-[#2DD4BF] !important font-bold">✔</span> <span className="text-white">Full-scale automation services</span></li>
-                    <li><span className="text-[#2DD4BF] !important font-bold">✔</span> <span className="text-white">Enterprise-level dashboards</span></li>
-                    <li><span className="text-[#2DD4BF] !important font-bold">✔</span> <span className="text-white">24/7 dedicated support</span></li>
-                    <li><span className="text-[#2DD4BF] !important font-bold">✔</span> <span className="text-white">Tailored data solutions</span></li>
+                    <li><span style={{ color: '#2DD4BF', fontWeight: 'bold' }}>✔</span> <span className="text-white">Full-scale automation services</span></li>
+                    <li><span style={{ color: '#2DD4BF', fontWeight: 'bold' }}>✔</span> <span className="text-white">Enterprise-level dashboards</span></li>
+                    <li><span style={{ color: '#2DD4BF', fontWeight: 'bold' }}>✔</span> <span className="text-white">24/7 dedicated support</span></li>
+                    <li><span style={{ color: '#2DD4BF', fontWeight: 'bold' }}>✔</span> <span className="text-white">Tailored data solutions</span></li>
                   </ul>
                 </div>
                 <Link href="#contact-us">
@@ -229,6 +229,7 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
+
 
 
 
