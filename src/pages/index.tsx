@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { BarChart2, Cpu, LineChart, Zap, Menu, X } from "lucide-react"; // Removed unused imports: ArrowRight, Database
+import { BarChart2, Cpu, LineChart, Zap, Menu, X } from "lucide-react"; 
 import Link from "next/link";
+import React from "react"; // Import React to get the type definitions
 
 export default function LandingPage() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,21 +10,21 @@ export default function LandingPage() {
     setMenuOpen(!menuOpen);
   };
 
-  // Define handleSubmit inside the component
-  const handleSubmit = (event) => {
+  // Define handleSubmit with explicit type for the 'event' parameter
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault(); // Prevent default form submission
 
-    const formData = new FormData(event.target);
+    const formData = new FormData(event.target as HTMLFormElement);
 
     // Send the form data via POST request to Netlify's form handler
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
+      body: new URLSearchParams(formData as any).toString(),
     })
       .then(() => {
         alert("Thank you! We received your message and will be in touch shortly to discuss the project further.");
-        event.target.reset(); // Reset the form after successful submission
+        event.currentTarget.reset(); // Reset the form after successful submission
       })
       .catch((error) => alert("Oops! Something went wrong. Please try again."));
   };
