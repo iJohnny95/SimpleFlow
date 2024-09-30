@@ -9,6 +9,25 @@ export default function LandingPage() {
     setMenuOpen(!menuOpen);
   };
 
+  // Define handleSubmit inside the component
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevent default form submission
+
+    const formData = new FormData(event.target);
+
+    // Send the form data via POST request to Netlify's form handler
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => {
+        alert("Thank you! We received your message and will be in touch shortly to discuss the project further.");
+        event.target.reset(); // Reset the form after successful submission
+      })
+      .catch((error) => alert("Oops! Something went wrong. Please try again."));
+  };
+
   return (
     <div className="flex flex-col min-h-screen transition-colors duration-500">
       {/* Header */}
@@ -393,11 +412,12 @@ export default function LandingPage() {
             </div>
 
             <div className="mt-12 max-w-4xl mx-auto bg-white dark:bg-gray-900 p-10 rounded-lg shadow-xl">
-              <form 
-                name="contact" 
-                method="POST" 
-                data-netlify="true" 
-                netlify-honeypot="bot-field" 
+              <form
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                onSubmit={handleSubmit} // Use a JavaScript handler to process the form submission
                 className="space-y-8"
               >
                 <input type="hidden" name="form-name" value="contact" />
@@ -461,6 +481,7 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
+
 
 
       </main>
