@@ -31,22 +31,22 @@ export default function LandingPage() {
             <Link 
               className="text-sm font-medium text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-all duration-300" 
               href="#services">
-              Services
+              Our Solutions
             </Link>
             <Link 
               className="text-sm font-medium text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-all duration-300" 
               href="#pricing">
-              Pricing
+              Flexible Pricing
             </Link>
             <Link 
               className="text-sm font-medium text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-all duration-300" 
               href="#testimonials">
-              Testimonials
+              Success Stories
             </Link>
             <Link 
               className="text-sm font-bold bg-teal-400 hover:bg-teal-500 text-gray-900 px-4 py-2 rounded-lg transition-all duration-300"
               href="#contact-us">
-              Contact Us
+              Get in Touch
             </Link>
           </nav>
         </div>
@@ -62,25 +62,25 @@ export default function LandingPage() {
             className="text-sm font-medium bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-all duration-300" 
             href="#services" 
             onClick={toggleMenu}>
-            Services
+            Our Solutions
           </Link>
           <Link 
             className="text-sm font-medium bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-all duration-300" 
             href="#pricing" 
             onClick={toggleMenu}>
-            Pricing
+            Flexible Pricing
           </Link>
           <Link 
             className="text-sm font-medium bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-all duration-300" 
             href="#testimonials" 
             onClick={toggleMenu}>
-            Testimonials
+            Success Stories:
           </Link>
           <Link 
             className="text-sm font-bold bg-teal-400 hover:bg-teal-500 text-gray-900 px-4 py-2 rounded-lg transition-all duration-300" 
             href="#contact-us" 
             onClick={toggleMenu}>
-            Contact Us
+            Get in Touch
           </Link>
         </nav>
       </div>
@@ -93,52 +93,52 @@ export default function LandingPage() {
             <div className="flex flex-col items-center justify-center text-center space-y-6">
               <div className="space-y-4">
                 <h1 className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl animate-pulse">
-                  Automate Your Success with SimpleFlow
+                  Simplify, Automate, and Scale Your Business with SimpleFlow
                 </h1>
-                <p className="mx-auto max-w-[700px] md:text-xl lg:text-2xl">
-                  Experience the power of automation, real-time data analytics, and interactive dashboards designed to grow your business.
+                <p className="mx-auto max-w-[700px] md:text-xl lg:text-2xl mt-6">
+                  Unlock the power of <strong>automation</strong> and <strong>real-time analytics</strong> to make smarter, faster business decisions. SimpleFlow's <strong>interactive dashboards</strong> put actionable insights at your fingertips, helping you grow your business with confidence.
                 </p>
               </div>
               <div className="space-x-4">
                 <Link href="#contact-us">
                   <button className="px-6 py-3 rounded-lg bg-teal-400 hover:bg-teal-500 text-gray-900 font-bold text-lg transition-all duration-300 shadow-md hover:shadow-lg">
-                    Contact Us
+                    Start Automating Today
                   </button>
                 </Link>
                 <Link href="#services">
                   <button className="px-6 py-3 rounded-lg border border-white hover:bg-white hover:text-gray-900 font-bold text-lg transition-all duration-300 shadow-md hover:shadow-lg">
-                    Learn More
+                    Explore Our Solutions
                   </button>
                 </Link>
               </div>
             </div>
           </div>
         </section>
-
         {/* Services Section */}
         <section id="services" className="w-full py-16 md:py-24 bg-gray-100 dark:bg-gray-900 transition-colors duration-500">
           <div className="container mx-auto max-w-7xl px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12 text-gray-900 dark:text-gray-100">
-              Our Premium Services
+              Unlock Growth with Our Smart Solutions
             </h2>
             <p className="max-w-3xl mx-auto text-lg text-center mb-12">
-              At SimpleFlow, we understand the challenges that businesses face—managing repetitive tasks, processing vast amounts of data, and making timely decisions. Our smart automation tools take the burden of manual tasks off your shoulders, allowing you to focus on growing your business.
-            </p>            
+              We know that managing <strong>repetitive tasks</strong>, processing <strong>large volumes of data</strong>, and making <strong>critical decisions</strong> in real-time can be overwhelming. SimpleFlow’s <strong>intelligent automation tools</strong> remove these burdens so you can focus on <strong>expanding your business</strong>.
+            </p>
+           
             <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 pt-8">
               <div className="flex flex-col items-center text-center">
                 <Cpu className="h-12 w-12 mb-4 text-indigo-500 dark:text-teal-400 animate-bounce" />
                 <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-gray-100">Automation</h3>
-                <p className="text-gray-700 dark:text-gray-400">Streamline repetitive tasks with our intelligent automation solutions.</p>
+                <p className="text-gray-700 dark:text-gray-400">Let our tools handle the busy work while you focus on strategy and innovation.</p>
               </div>
               <div className="flex flex-col items-center text-center">
                 <BarChart2 className="h-12 w-12 mb-4 text-indigo-500 dark:text-teal-400 animate-spin" />
                 <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-gray-100">Reporting</h3>
-                <p className="text-gray-700 dark:text-gray-400">Generate dynamic reports that help you make data-driven decisions.</p>
+                <p className="text-gray-700 dark:text-gray-400">Create actionable reports that guide data-driven growth in real-time.</p>
               </div>
               <div className="flex flex-col items-center text-center">
                 <LineChart className="h-12 w-12 mb-4 text-indigo-500 dark:text-teal-400 animate-pulse" />
                 <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-gray-100">Dashboards</h3>
-                <p className="text-gray-700 dark:text-gray-400">Visualize your data with fully customizable and interactive dashboards.</p>
+                <p className="text-gray-700 dark:text-gray-400">Our dashboards turn complex data into clear insights, helping you take immediate action.</p>
               </div>
             </div>
           </div>
@@ -148,27 +148,101 @@ export default function LandingPage() {
         <section id="pricing" className="w-full py-16 md:py-24 bg-indigo-500 dark:bg-gray-800 text-white dark:text-gray-300 transition-colors duration-500">
           <div className="container mx-auto max-w-7xl px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12">
-              Pricing Plans
+              Transparent and Flexible Pricing
             </h2>
             <p className="text-center mb-8 mx-auto max-w-2xl text-lg">
-              We offer flexible pricing plans tailored to your business needs. Every project is customized to ensure the best solution for you.
+              At SimpleFlow, we offer <strong>scalable pricing plans</strong> designed to grow with your business. Whether you’re automating a few tasks or transforming your entire workflow, we provide flexible options that fit your needs and budget.
             </p>
-            <div className="grid gap-8 sm:grid-cols-1 lg:grid-cols-3">
-              
-              {/* Basic Plan */}
-              <div className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:text-white flex flex-col group">
+
+            {/* Mobile: Horizontal Scroll */}
+            <div className="flex flex-row space-x-4 overflow-x-auto snap-x snap-mandatory sm:hidden pb-4 scroll-smooth">
+              {/* Pricing Card - Basic Plan */}
+              <div className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg flex-shrink-0 w-72 snap-center transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:text-white group">
                 <div className="flex-grow">
                   <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100 group-hover:text-white transition-colors duration-300">
                     Basic Plan
                   </h3>
                   <p className="text-lg mb-4 text-gray-700 dark:text-gray-400 group-hover:text-white transition-colors duration-300">
-                    Perfect for startups looking to automate essential business processes.
+                    Ideal for startups looking to get started with automation. Includes key features to help streamline essential processes.
                   </p>
                   <p className="text-4xl font-bold mb-4 group-hover:text-white transition-colors duration-300">€500+</p>
                   <ul className="text-left mb-6 space-y-2">
-                    <li><span className="text-[#2DD4BF] font-bold" style={{ color: '#2DD4BF' }}>✔</span> <span className="text-white">Basic automation setup</span></li>
-                    <li><span className="text-[#2DD4BF] font-bold" style={{ color: '#2DD4BF' }}>✔</span> <span className="text-white">Dashboard integration</span></li>
-                    <li><span className="text-[#2DD4BF] font-bold" style={{ color: '#2DD4BF' }}>✔</span> <span className="text-white">Reporting tools</span></li>
+                    <li><span className="text-[#2DD4BF] font-bold">✔</span> Basic automation setup</li>
+                    <li><span className="text-[#2DD4BF] font-bold">✔</span> Dashboard integration</li>
+                    <li><span className="text-[#2DD4BF] font-bold">✔</span> Simple reporting tools</li>
+                  </ul>
+                </div>
+                <Link href="#contact-us">
+                  <button className="w-full bg-teal-400 hover:bg-teal-500 text-gray-900 font-bold rounded-lg py-3 transition-all duration-300 shadow-md hover:shadow-lg">
+                    Get Started
+                  </button>
+                </Link>
+              </div>
+
+              {/* Pricing Card - Pro Plan */}
+              <div className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg flex-shrink-0 w-72 snap-center transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:text-white group">
+                <div className="flex-grow">
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100 group-hover:text-white transition-colors duration-300">
+                    Pro Plan
+                  </h3>
+                  <p className="text-lg mb-4 text-gray-700 dark:text-gray-400 group-hover:text-white transition-colors duration-300">
+                    Perfect for growing businesses that need advanced tools to optimize workflows and gain deeper insights.
+                  </p>
+                  <p className="text-4xl font-bold mb-4 group-hover:text-white transition-colors duration-300">€1500+</p>
+                  <ul className="text-left mb-6 space-y-2">
+                    <li><span className="text-[#2DD4BF] font-bold">✔</span> Advanced automation tools</li>
+                    <li><span className="text-[#2DD4BF] font-bold">✔</span> Customizable dashboards</li>
+                    <li><span className="text-[#2DD4BF] font-bold">✔</span> In-depth analytics and reporting</li>
+                  </ul>
+                </div>
+                <Link href="#contact-us">
+                  <button className="w-full bg-teal-400 hover:bg-teal-500 text-gray-900 font-bold rounded-lg py-3 transition-all duration-300 shadow-md hover:shadow-lg">
+                    Get Started
+                  </button>
+                </Link>
+              </div>
+
+              {/* Pricing Card - Enterprise Plan */}
+              <div className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg flex-shrink-0 w-72 snap-center transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:text-white group">
+                <div className="flex-grow">
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100 group-hover:text-white transition-colors duration-300">
+                    Enterprise Plan
+                  </h3>
+                  <p className="text-lg mb-4 text-gray-700 dark:text-gray-400 group-hover:text-white transition-colors duration-300">
+                    Comprehensive solutions for large-scale operations that require full automation support and dedicated services.
+                  </p>
+                  <p className="text-4xl font-bold mb-4 group-hover:text-white transition-colors duration-300">€5000+</p>
+                  <ul className="text-left mb-6 space-y-2">
+                    <li><span className="text-[#2DD4BF] font-bold">✔</span> Full-scale automation services</li>
+                    <li><span className="text-[#2DD4BF] font-bold">✔</span> Enterprise-level dashboards</li>
+                    <li><span className="text-[#2DD4BF] font-bold">✔</span> 24/7 dedicated support</li>
+                  </ul>
+                </div>
+                <Link href="#contact-us">
+                  <button className="w-full bg-teal-400 hover:bg-teal-500 text-gray-900 font-bold rounded-lg py-3 transition-all duration-300 shadow-md hover:shadow-lg">
+                    Get Started
+                  </button>
+                </Link>
+              </div>
+            </div>
+
+            {/* Desktop: Grid Layout */}
+            <div className="hidden sm:grid gap-8 sm:grid-cols-1 lg:grid-cols-3">
+              
+              {/* Basic Plan */}
+              <div className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:text-white group">
+                <div className="flex-grow">
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100 group-hover:text-white transition-colors duration-300">
+                    Basic Plan
+                  </h3>
+                  <p className="text-lg mb-4 text-gray-700 dark:text-gray-400 group-hover:text-white transition-colors duration-300">
+                    Ideal for startups looking to get started with automation. Includes key features to help streamline essential processes.
+                  </p>
+                  <p className="text-4xl font-bold mb-4 group-hover:text-white transition-colors duration-300">€500+</p>
+                  <ul className="text-left mb-6 space-y-2">
+                    <li><span className="text-[#2DD4BF] font-bold">✔</span> Basic automation setup</li>
+                    <li><span className="text-[#2DD4BF] font-bold">✔</span> Dashboard integration</li>
+                    <li><span className="text-[#2DD4BF] font-bold">✔</span> Simple reporting tools</li>
                   </ul>
                 </div>
                 <Link href="#contact-us">
@@ -179,20 +253,19 @@ export default function LandingPage() {
               </div>
 
               {/* Pro Plan */}
-              <div className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:text-white flex flex-col group">
+              <div className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:text-white group">
                 <div className="flex-grow">
                   <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100 group-hover:text-white transition-colors duration-300">
                     Pro Plan
                   </h3>
                   <p className="text-lg mb-4 text-gray-700 dark:text-gray-400 group-hover:text-white transition-colors duration-300">
-                    For businesses that need advanced automation and data-driven insights.
+                    Perfect for growing businesses that need advanced tools to optimize workflows and gain deeper insights.
                   </p>
                   <p className="text-4xl font-bold mb-4 group-hover:text-white transition-colors duration-300">€1500+</p>
                   <ul className="text-left mb-6 space-y-2">
-                    <li><span className="text-[#2DD4BF] font-bold" style={{ color: '#2DD4BF' }}>✔</span> <span className="text-white">Advanced automation tools</span></li>
-                    <li><span className="text-[#2DD4BF] font-bold" style={{ color: '#2DD4BF' }}>✔</span> <span className="text-white">Customizable dashboards</span></li>
-                    <li><span className="text-[#2DD4BF] font-bold" style={{ color: '#2DD4BF' }}>✔</span> <span className="text-white">In-depth analytics and reporting</span></li>
-                    <li><span className="text-[#2DD4BF] font-bold" style={{ color: '#2DD4BF' }}>✔</span> <span className="text-white">Ongoing support</span></li>
+                    <li><span className="text-[#2DD4BF] font-bold">✔</span> Advanced automation tools</li>
+                    <li><span className="text-[#2DD4BF] font-bold">✔</span> Customizable dashboards</li>
+                    <li><span className="text-[#2DD4BF] font-bold">✔</span> In-depth analytics and reporting</li>
                   </ul>
                 </div>
                 <Link href="#contact-us">
@@ -203,20 +276,19 @@ export default function LandingPage() {
               </div>
 
               {/* Enterprise Plan */}
-              <div className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:text-white flex flex-col group">
+              <div className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl hover:bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:text-white group">
                 <div className="flex-grow">
                   <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100 group-hover:text-white transition-colors duration-300">
                     Enterprise Plan
                   </h3>
                   <p className="text-lg mb-4 text-gray-700 dark:text-gray-400 group-hover:text-white transition-colors duration-300">
-                    Comprehensive automation solutions for large-scale businesses with dedicated support.
+                    Comprehensive solutions for large-scale operations that require full automation support and dedicated services.
                   </p>
                   <p className="text-4xl font-bold mb-4 group-hover:text-white transition-colors duration-300">€5000+</p>
                   <ul className="text-left mb-6 space-y-2">
-                    <li><span className="text-[#2DD4BF] font-bold" style={{ color: '#2DD4BF' }}>✔</span> <span className="text-white">Full-scale automation services</span></li>
-                    <li><span className="text-[#2DD4BF] font-bold" style={{ color: '#2DD4BF' }}>✔</span> <span className="text-white">Enterprise-level dashboards</span></li>
-                    <li><span className="text-[#2DD4BF] font-bold" style={{ color: '#2DD4BF' }}>✔</span> <span className="text-white">24/7 dedicated support</span></li>
-                    <li><span className="text-[#2DD4BF] font-bold" style={{ color: '#2DD4BF' }}>✔</span> <span className="text-white">Tailored data solutions</span></li>
+                    <li><span className="text-[#2DD4BF] font-bold">✔</span> Full-scale automation services</li>
+                    <li><span className="text-[#2DD4BF] font-bold">✔</span> Enterprise-level dashboards</li>
+                    <li><span className="text-[#2DD4BF] font-bold">✔</span> 24/7 dedicated support</li>
                   </ul>
                 </div>
                 <Link href="#contact-us">
@@ -227,6 +299,12 @@ export default function LandingPage() {
               </div>
 
             </div>
+
+
+            {/* Post-Pricing Paragraph */}
+            <p className="text-center mt-12 mx-auto max-w-2xl text-lg">
+              Every solution is fully <strong>customizable</strong> to meet the unique needs of your business, ensuring you get the most <strong>effective results</strong> and a strong <strong>return on investment</strong>.
+            </p>
           </div>
         </section>
 
@@ -236,7 +314,7 @@ export default function LandingPage() {
         <section id="testimonials" className="w-full py-16 md:py-24 bg-gray-50 dark:bg-gray-900 transition-colors duration-500">
           <div className="container mx-auto max-w-7xl px-4 md:px-6">
             <h2 className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl text-center mb-12 text-gray-900 dark:text-white">
-              What Our Clients Are Saying
+              Success Stories from Our Clients
             </h2>
             <p className="text-lg text-center max-w-3xl mx-auto mb-16 text-gray-600 dark:text-gray-400">
               Hear from our satisfied clients who have experienced incredible transformations in their businesses with SimpleFlow&apos;s innovative solutions.
@@ -251,7 +329,7 @@ export default function LandingPage() {
                   </div>
                 </div>
                 <p className="text-lg italic text-gray-700 dark:text-gray-300 mb-6 flex-grow">
-                  &quot;SimpleFlow revolutionized our workflow. We increased productivity by 30% since implementing their solutions.&quot;
+                  &quot;SimpleFlow revolutionized our workflow and boosted our <strong>productivity by 30%</strong>. Their automation tools have saved us countless hours, allowing us to focus on <strong>growth and innovation</strong>.&quot;
                 </p>
                 <div className="mt-auto">
                   <p className="font-bold text-gray-900 dark:text-white">Jane Doe</p>
@@ -267,7 +345,7 @@ export default function LandingPage() {
                   </div>
                 </div>
                 <p className="text-lg italic text-gray-700 dark:text-gray-300 mb-6 flex-grow">
-                  &quot;The insights we&apos;ve gained from SimpleFlow&apos;s dashboards have been invaluable. It&apos;s changed the way we make decisions.&quot;
+                  &quot;The insights from SimpleFlow’s dashboards have been <strong>game-changing</strong> for us. We’re now making <strong>data-driven decisions</strong> faster than ever before, and it’s transformed our business.&quot;
                 </p>
                 <div className="mt-auto">
                   <p className="font-bold text-gray-900 dark:text-white">John Smith</p>
@@ -283,7 +361,7 @@ export default function LandingPage() {
                   </div>
                 </div>
                 <p className="text-lg italic text-gray-700 dark:text-gray-300 mb-6 flex-grow">
-                  &quot;SimpleFlow&apos;s automation tools have saved us countless hours. Our team can now focus on strategic initiatives.&quot;
+                  &quot;SimpleFlow's automation tools have not only saved us <strong>time and resources</strong>, but they’ve also improved our overall <strong>operational efficiency</strong>. We can now tackle <strong>strategic initiatives</strong> with ease.&quot;
                 </p>
                 <div className="mt-auto">
                   <p className="font-bold text-gray-900 dark:text-white">Emily Brown</p>
@@ -304,10 +382,10 @@ export default function LandingPage() {
           <div className="container mx-auto max-w-5xl px-4 md:px-6">
             <div className="text-center space-y-8">
               <h2 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-                Contact Us
+                Get in Touch with SimpleFlow
               </h2>
               <p className="mx-auto max-w-[900px] md:text-xl lg:text-2xl leading-relaxed">
-                Ready to automate your business, optimize workflows, and unlock growth potential? Fill out the form below and we’ll guide you through the next steps.
+                Ready to take the next step toward <strong>automation</strong> and <strong>optimized workflows</strong>? Fill out the form below, and let’s start <strong>unlocking your business’s potential</strong> together. Our team will guide you through the process to ensure you get the most out of our solutions.
               </p>
             </div>
 
