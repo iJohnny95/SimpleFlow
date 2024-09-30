@@ -10,6 +10,36 @@ export default function LandingPage() {
     setMenuOpen(!menuOpen);
   };
 
+  // Form submit handler function
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault(); // Prevent the default form submission
+
+    const formData = new FormData(event.target as HTMLFormElement); // Gather form data
+    const data = Object.fromEntries(formData.entries()); // Convert formData to an object
+
+    try {
+      // Make a POST request to your API endpoint or server
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data), // Convert the data to JSON
+      });
+
+      if (response.ok) {
+        // If submission is successful, redirect to the thank-you page
+        window.location.href = '/thank-you';
+      } else {
+        // If there was a problem, handle the error
+        alert('There was an issue submitting the form. Please try again.');
+      }
+    } catch (error) {
+      // Catch and log any error that happens during the request
+      console.error('Error:', error);
+      alert('An error occurred. Please try again later.');
+    }
+  };
 
   return (
     <div className="flex flex-col min-h-screen transition-colors duration-500">
@@ -395,84 +425,76 @@ export default function LandingPage() {
             </div>
 
             <div className="mt-12 max-w-4xl mx-auto bg-white dark:bg-gray-900 p-10 rounded-lg shadow-xl">
-            <form
-              name="contact"
-              method="POST"
-              action="/thank-you" // Redirect to the thank-you page after successful submission
-              data-netlify="true"
-              netlify-honeypot="bot-field" // Honeypot field for spam protection
-              className="space-y-8"
-            >
-              <input type="hidden" name="form-name" value="contact" />
-              
-              {/* Hidden field for spam prevention */}
-              <p className="hidden">
-                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-              </p>
+              <form
+                name="contact"
+                method="POST"
+                action="/thank-you" // Change this or handle via JS fetch below
+                className="space-y-8"
+                onSubmit={handleSubmit} // Add JS form handling function
+              >
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <input
+                    type="text"
+                    name="first-name"
+                    placeholder="First Name"
+                    className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
+                    required
+                  />
+                  <input
+                    type="text"
+                    name="last-name"
+                    placeholder="Last Name"
+                    className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="E-mail"
+                    className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
+                    required
+                  />
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone Number (optional)"
+                    className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
+                  />
+                  <input
+                    type="text"
+                    name="company-name"
+                    placeholder="Company Name (optional)"
+                    className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
+                  />
+                  <input
+                    type="text"
+                    name="budget"
+                    placeholder="Project Budget (optional)"
+                    className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
+                  />
+                </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <input
-                  type="text"
-                  name="first-name"
-                  placeholder="First Name"
+                <textarea
+                  name="message"
+                  placeholder="Tell us about your business needs and how we can assist you."
+                  rows={5}
                   className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
                   required
                 />
-                <input
-                  type="text"
-                  name="last-name"
-                  placeholder="Last Name"
-                  className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
-                  required
-                />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="E-mail"
-                  className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
-                  required
-                />
-                <input
-                  type="tel"
-                  name="phone"
-                  placeholder="Phone Number (optional)"
-                  className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
-                />
-                <input
-                  type="text"
-                  name="company-name"
-                  placeholder="Company Name (optional)"
-                  className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
-                />
-                <input
-                  type="text"
-                  name="budget"
-                  placeholder="Project Budget (optional)"
-                  className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
-                />
-              </div>
 
-              <textarea
-                name="message"
-                placeholder="Tell us about your business needs and how we can assist you."
-                rows={5}
-                className="px-4 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-300 rounded-lg focus:outline-none w-full"
-                required
-              />
-
-              <div className="text-center">
-                <button
-                  type="submit"
-                  className="px-8 py-4 bg-gradient-to-r from-teal-500 to-indigo-500 text-white font-bold rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
-                >
-                  Get in Touch
-                </button>
-              </div>
-            </form>
-
+                <div className="text-center">
+                  <button
+                    type="submit"
+                    className="px-8 py-4 bg-gradient-to-r from-teal-500 to-indigo-500 text-white font-bold rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                  >
+                    Get in Touch
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </section>
+
 
 
 
